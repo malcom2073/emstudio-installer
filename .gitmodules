@@ -1,0 +1,9 @@
+[submodule "emslogview"]
+	path = emslogview
+	url = git://github.com/malcom2073/emslogview.git
+[submodule "emsload"]
+	path = emsload
+	url = git://github.com/malcom2073/emsload
+[submodule "emstune"]
+	path = emstune
+	url = git://github.com/malcom2073/emstune
