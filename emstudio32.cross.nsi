@@ -53,19 +53,19 @@ Section "EMStudio (Required)" ;No components page, name is not important
   
 
   SetOutPath "$INSTDIR\definitions"
-  File "core/freeems.config.json"
-  File "core/decodersettings.json"
+  File "emstune/core/freeems.config.json"
+  File "emstune/core/decodersettings.json"
   SetOutPath "$INSTDIR\dashboards"
-  File "core/src/gauges.qml"
+  File "emstune/core/src/gauges.qml"
   SetOutPath "$INSTDIR\wizards"
-  File "core/wizards/BenchTest.qml"
-  File "core/wizards/DecoderOffset.qml"
-  File "core/wizards/wizard.qml"
+  File "emstune/core/wizards/BenchTest.qml"
+  File "emstune/core/wizards/DecoderOffset.qml"
+  File "emstune/core/wizards/wizard.qml"
   SetOutPath "$INSTDIR\plugins"
 !ifndef PLUGIN
-  File "core/plugins/libfreeemsplugin.a"
+  File "emstune/core/plugins/libfreeemsplugin.a"
 !else
-  File "core/plugins/${PLUGIN}"
+  File "emstune.core/plugins/${PLUGIN}"
 !endif
   ; Write the installation path into the registry
   WriteRegStr HKLM SOFTWARE\EMStudio "Install_Dir" "$INSTDIR"
